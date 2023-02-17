@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(), RvAction {
         MySharedPreference.init(this)
         /** listga catch dagi ma'lumotlarni o'qib olyabti */
          list = MySharedPreference.userList
-        userAdapter = UserAdapter(list, this)
+        userAdapter = UserAdapter(list, this, this)
         binding.rv.adapter = userAdapter
 
     }
